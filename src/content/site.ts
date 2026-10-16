@@ -10,13 +10,16 @@ export const site = {
     "Na Inter Fit você encontra estrutura completa, profissionais qualificados e um ambiente feito para te motivar todos os dias.",
   instagram: "https://www.instagram.com/interfitacademia/",
   instagramHandle: "@interfitacademia",
-  // TODO: confirmar número oficial (formato 55 + DDD + número, só dígitos)
-  whatsapp: "5500000000000",
-  // TODO: confirmar
-  phone: "(00) 00000-0000",
+  // Número da bio do Instagram; confirmar se é o WhatsApp de atendimento
+  whatsapp: "5534996701212",
+  phone: "(34) 99670-1212",
   email: "contato@interfitacademia.com.br",
-  address: "Endereço da academia, 000 — Bairro, Cidade/UF",
-  mapsUrl: "https://maps.google.com",
+  // TODO: confirmar cidade/UF (inferido pelo DDD 34 e pelo bairro Taiaman)
+  address: "R. dos Taroís, 459 — Taiaman, Uberlândia/MG",
+  mapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent("R. dos Taroís, 459 - Taiaman, Uberlândia - MG"),
+  convenios: ["Gympass", "TotalPass"],
 };
 
 export const whatsappLink = (msg = "Olá! Quero saber mais sobre a Interfit.") =>
@@ -73,8 +76,10 @@ export const features = [
 
 export const modalidades = [
   { title: "Musculação", text: "Treino de força com orientação em todos os horários." },
-  { title: "Aulas coletivas", text: "Ritmo, energia e turma para te manter constante." },
-  { title: "Funcional", text: "Movimentos completos para condicionamento e agilidade." },
+  { title: "Nutri", text: "Acompanhamento nutricional alinhado ao seu treino." },
+  { title: "Muay Thai", text: "Técnica, condicionamento e energia nas aulas de luta." },
+  { title: "FitDance", text: "Dança e ritmo para treinar se divertindo." },
+  { title: "GAP", text: "Glúteos, abdômen e pernas com foco em definição." },
   { title: "Pilates", text: "Postura, mobilidade e fortalecimento do core." },
   { title: "Ballet", text: "Técnica, leveza e expressão para todas as idades." },
 ];
@@ -92,7 +97,7 @@ export const planos = [
     name: "Semestral",
     price: "000",
     period: "/mês",
-    perks: ["Tudo do Mensal", "Aulas coletivas", "1 mês de Funcional grátis"],
+    perks: ["Tudo do Mensal", "Aulas coletivas", "Acesso às modalidades"],
     highlight: true,
   },
   {

@@ -1,4 +1,4 @@
-import { planos, whatsappLink } from "@/content/site";
+import { planos, site, whatsappLink } from "@/content/site";
 import { Arrow, Check } from "../Icons";
 import { Mark } from "../Mark";
 
@@ -14,6 +14,10 @@ export function Planos() {
             <span className="display block text-4xl">Escolha o seu</span>
             <span className="display-accent block text-5xl">Ritmo</span>
           </h2>
+          <p className="glass mt-6 inline-flex items-center gap-3 rounded-full px-5 py-2.5 text-xs font-semibold uppercase tracking-wide">
+            <span className="h-1.5 w-1.5 rotate-45 bg-brand" aria-hidden="true" />
+            Aceitamos {site.convenios.join(" e ")}
+          </p>
         </div>
 
         <ul className="grid gap-5 md:grid-cols-3">
