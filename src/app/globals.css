@@ -137,3 +137,14 @@
 @media (prefers-reduced-motion: reduce) {
   .enter, .reveal, .drift, .progress, .marquee { animation: none !important; opacity: 1; transform: none; }
 }
+
+@supports (animation-timeline: scroll()) {
+  .fab {
+    animation: rise linear both;
+    animation-timeline: scroll(root);
+    animation-range: 70vh 100vh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fab { animation: none !important; opacity: 1; transform: none; }
+}

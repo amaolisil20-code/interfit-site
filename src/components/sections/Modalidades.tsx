@@ -27,7 +27,7 @@ export function Modalidades() {
                 href={whatsappLink(`Olá! Quero saber mais sobre ${m.title}.`)}
                 target="_blank"
                 rel="noopener"
-                className="group relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-md border border-line bg-ink-3 p-5 transition-colors hover:border-brand lg:aspect-[3/4]"
+                className="group relative flex aspect-square flex-col justify-between overflow-hidden rounded-md border border-line bg-ink-3 p-5 transition-colors hover:border-brand lg:aspect-[5/6]"
               >
                 <Mark className="pointer-events-none absolute -right-8 -top-6 h-40 w-40 opacity-[0.07]" />
                 <span className="display-accent relative text-5xl">{String(i + 1).padStart(2, "0")}</span>

@@ -5,6 +5,7 @@ import { Features } from "@/components/sections/Features";
 import { Modalidades } from "@/components/sections/Modalidades";
 import { Planos } from "@/components/sections/Planos";
 import { HorariosContato } from "@/components/sections/HorariosContato";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <HorariosContato />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }
