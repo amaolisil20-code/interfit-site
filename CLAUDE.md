@@ -31,7 +31,7 @@ Site institucional da Interfit Academia. Next.js 15 (App Router) + TypeScript + 
 - **Fundos**: alternar `bg-ink` → `bg-ink-2` entre seções. Sem gradiente decorativo (só o escurecimento sobre foto) e sem brilho/neon.
 - **Vidro (glassmorfismo)**: `.glass` (cartões, painéis) e `.glass-bar` (cabeçalho). Só sobre foto ou `<Mark />` — precisa de algo atrás para desfocar. Um nível de vidro por tela (nunca vidro dentro de vidro); destaque = `.glass-brand` (borda amarela). Texto sempre branco ou `text-white/70`+; hover com `.lift`.
 - **Movimento**: tudo em CSS, só `transform`/`opacity`: entrada `.enter`, revelar ao rolar `.reveal`, flutuar `.float`, loop `.marquee`. Sempre com fallback estático e `prefers-reduced-motion`.
-- **Símbolo**: usar `<Mark />` (traço, `text-brand`, opacidade ≤ 15%) como textura grande e cortada na borda; no máx. 1 por seção.
+- **Símbolo**: sempre o ícone oficial (`public/img/logo.png`) — `<Logo />` no cabeçalho/rodapé e `<Mark />` como textura grande e discreta (opacidade ≤ 15%); no máx. 1–2 por seção. Nunca redesenhar o ícone em SVG.
 - **Ícones**: só os de `Icons.tsx` (traço 1.8), `text-brand`, 36px nos blocos de destaque, 20px em linha.
 - **Espaçamento**: seções com `py-20 lg:py-28`; entre eyebrow → título `mt-6`, título → texto `mt-8`, texto → botões `mt-10`. Margem lateral só via `.container-x`.
 - **Imagens**: preferir fotos reais da academia; evitar banco de imagem/IA genérica. O hero é tipográfico de propósito.
