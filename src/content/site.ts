@@ -68,11 +68,11 @@ export const features = [
 ] as const;
 
 export const modalidades = [
-  { title: "Musculação", image: "/img/musculacao.jpg", text: "Treino de força com orientação em todos os horários." },
-  { title: "Aulas coletivas", image: "/img/coletivas.jpg", text: "Ritmo, energia e turma para te manter constante." },
-  { title: "Funcional", image: "/img/funcional.jpg", text: "Movimentos completos para condicionamento e agilidade." },
-  { title: "Pilates", image: "/img/pilates.jpg", text: "Postura, mobilidade e fortalecimento do core." },
-  { title: "Ballet", image: "/img/ballet.jpg", text: "Técnica, leveza e expressão para todas as idades." },
+  { title: "Musculação", text: "Treino de força com orientação em todos os horários." },
+  { title: "Aulas coletivas", text: "Ritmo, energia e turma para te manter constante." },
+  { title: "Funcional", text: "Movimentos completos para condicionamento e agilidade." },
+  { title: "Pilates", text: "Postura, mobilidade e fortalecimento do core." },
+  { title: "Ballet", text: "Técnica, leveza e expressão para todas as idades." },
 ];
 
 // TODO: valores e benefícios provisórios — substituir pelos planos reais

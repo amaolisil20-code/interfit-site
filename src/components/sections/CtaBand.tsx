@@ -1,15 +1,12 @@
-import Image from "next/image";
 import { whatsappLink } from "@/content/site";
 import { Arrow } from "../Icons";
+import { Mark } from "../Mark";
 
 export function CtaBand() {
   return (
     <section className="relative isolate overflow-hidden border-y border-line bg-ink-2">
-      <div className="absolute inset-y-0 left-0 -z-10 hidden w-[28%] md:block">
-        <Image src="/img/pesos.jpg" alt="" fill sizes="28vw" className="object-cover opacity-70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-ink-2" />
-      </div>
-      <div className="container-x flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between md:pl-[24%]">
+      <Mark className="pointer-events-none absolute -left-10 top-1/2 -z-10 h-[220%] -translate-y-1/2 opacity-[0.07]" />
+      <div className="container-x flex flex-col gap-6 py-12 md:flex-row md:items-center md:justify-between">
         <div className="border-l-4 border-brand pl-4">
           <p className="text-sm font-bold uppercase">Pronto para</p>
           <p className="display-accent text-4xl">Começar?</p>
