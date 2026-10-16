@@ -66,5 +66,5 @@
   .btn-primary:hover { background: var(--color-brand-600); }
   .btn-outline { border: 1.5px solid var(--color-brand); color: #fff; }
   .btn-outline:hover { background: var(--color-brand); color: var(--color-ink); }
-  .container-x { margin-inline: auto; width: 100%; max-width: 1240px; padding-inline: 1.25rem; }
+  .container-x { margin-inline: auto; width: 100%; max-width: 1680px; padding-inline: clamp(1.25rem, 4vw, 4rem); }
 }
