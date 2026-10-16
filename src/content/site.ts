@@ -22,6 +22,19 @@ export const site = {
 export const whatsappLink = (msg = "Olá! Quero saber mais sobre a Interfit.") =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(msg)}`;
 
+export const hero = {
+  eyebrow: "Mais que uma academia",
+  title: ["A sua melhor", "Versão", "começa aqui"],
+  text: "Na Inter Fit, você encontra estrutura completa, profissionais qualificados e um ambiente feito para te motivar todos os dias.",
+  cta: {
+    label: "Agende sua aula experimental",
+    message: "Olá! Quero agendar uma aula experimental na Interfit.",
+  },
+  secondary: "Ver planos",
+  note: "Atendimento direto pelo WhatsApp, sem compromisso.",
+  motto: ["Disciplina", "Foco", "Resultados"],
+};
+
 export const nav = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
