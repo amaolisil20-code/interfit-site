@@ -5,8 +5,8 @@ import { Mark } from "../Mark";
 export function Features() {
   return (
     <section id="sobre" className="relative isolate overflow-hidden border-y border-line bg-ink-2 py-10 lg:py-14">
-      <Mark className="float pointer-events-none absolute -left-16 top-1/2 -z-10 h-72 w-72 -translate-y-1/2 opacity-[0.16] lg:h-96 lg:w-96" />
-      <Mark className="float pointer-events-none absolute -right-20 top-1/2 -z-10 h-72 w-72 -translate-y-1/3 opacity-[0.12] [animation-delay:-4s] lg:h-96 lg:w-96" />
+      <Mark className="float pointer-events-none absolute -left-16 top-1/2 -z-10 h-72 w-72 -translate-y-1/2 opacity-[0.08] lg:h-96 lg:w-96 lg:opacity-[0.16]" />
+      <Mark className="float pointer-events-none absolute -right-20 top-1/2 -z-10 h-72 w-72 -translate-y-1/3 opacity-[0.06] [animation-delay:-4s] lg:h-96 lg:w-96 lg:opacity-[0.12]" />
       <ul className="container-x grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
         {features.map((f, i) => {
           const Icon = featureIcons[f.icon];

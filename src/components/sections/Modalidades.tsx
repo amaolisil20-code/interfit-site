@@ -5,7 +5,7 @@ import { Mark } from "../Mark";
 export function Modalidades() {
   return (
     <section id="modalidades" className="relative isolate overflow-hidden py-20 lg:py-28">
-      <Mark className="float pointer-events-none absolute -right-24 top-1/2 -z-10 h-[460px] w-[460px] -translate-y-1/2 opacity-[0.14]" />
+      <Mark className="float pointer-events-none absolute -right-24 top-1/2 -z-10 h-[460px] w-[460px] -translate-y-1/2 opacity-[0.07] lg:opacity-[0.14]" />
       <div className="container-x grid gap-10 lg:grid-cols-[300px_1fr] lg:items-center">
         <div className="reveal">
           <p className="eyebrow text-brand">Nossas modalidades</p>

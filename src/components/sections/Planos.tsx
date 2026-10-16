@@ -5,8 +5,8 @@ import { Mark } from "../Mark";
 export function Planos() {
   return (
     <section id="planos" className="relative isolate overflow-hidden py-20 lg:py-28">
-      <Mark className="float pointer-events-none absolute -left-24 top-24 -z-10 h-[420px] w-[420px] opacity-[0.12]" />
-      <Mark className="float pointer-events-none absolute -right-28 bottom-0 -z-10 h-[360px] w-[360px] opacity-[0.1] [animation-delay:-5s]" />
+      <Mark className="float pointer-events-none absolute -left-24 top-24 -z-10 h-[420px] w-[420px] opacity-[0.06] lg:opacity-[0.12]" />
+      <Mark className="float pointer-events-none absolute -right-28 bottom-0 -z-10 h-[360px] w-[360px] opacity-[0.05] lg:opacity-[0.1] [animation-delay:-5s]" />
       <div className="container-x">
         <div className="reveal mb-12 max-w-xl">
           <p className="eyebrow text-brand">Planos</p>

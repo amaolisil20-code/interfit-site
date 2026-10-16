@@ -5,7 +5,7 @@ import { Mark } from "../Mark";
 export function HorariosContato() {
   return (
     <section className="relative isolate overflow-hidden border-t border-line bg-ink-2 py-20 lg:py-28">
-      <Mark className="float pointer-events-none absolute -left-20 top-1/3 -z-10 h-[420px] w-[420px] opacity-[0.12]" />
+      <Mark className="float pointer-events-none absolute -left-20 top-1/3 -z-10 h-[420px] w-[420px] opacity-[0.06] lg:opacity-[0.12]" />
       <div className="container-x grid gap-14 lg:grid-cols-2">
         <div id="horarios" className="reveal">
           <p className="eyebrow text-brand">Horários</p>

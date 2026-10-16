@@ -4,13 +4,13 @@ import { Instagram } from "./Icons";
 
 export function Footer() {
   return (
-    <footer className="border-t border-line py-10">
+    <footer className="border-t border-line py-10 pb-28 lg:pb-10">
       <div className="container-x flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <Logo className="h-24 w-24" />
-        <ul className="flex flex-wrap gap-x-6 gap-y-2">
+        <ul className="flex flex-wrap gap-x-6 gap-y-1">
           {nav.map((n) => (
             <li key={n.href}>
-              <a href={n.href} className="text-xs font-semibold uppercase tracking-wide text-mute hover:text-brand">
+              <a href={n.href} className="inline-block py-1.5 text-xs font-semibold uppercase tracking-wide text-mute hover:text-brand">
                 {n.label}
               </a>
             </li>
