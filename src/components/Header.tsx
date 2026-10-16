@@ -28,7 +28,7 @@ export function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled || open ? "bg-ink/95 backdrop-blur border-b border-line" : "bg-transparent"
+        scrolled || open ? "glass-bar" : "bg-transparent"
       }`}
     >
       <div aria-hidden="true" className="progress absolute inset-x-0 bottom-0 h-0.5 bg-brand" />

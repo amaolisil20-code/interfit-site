@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { hero, whatsappLink } from "@/content/site";
+import { hero, horarios, whatsappLink } from "@/content/site";
 import { Arrow } from "../Icons";
 
 export function Hero() {
@@ -56,6 +56,18 @@ export function Hero() {
           <p className="enter mt-4 text-xs text-mute" style={{ "--d": "0.95s" } as React.CSSProperties}>
             {hero.note}
           </p>
+        </div>
+      </div>
+
+      {/* Cartão de vidro sobre a foto, flutuando devagar (só desktop) */}
+      <div className="float absolute bottom-28 right-[5%] hidden w-[280px] lg:block">
+        <div className="glass enter rounded-xl p-5" style={{ "--d": "1.1s" } as React.CSSProperties}>
+          <p className="eyebrow text-brand">{hero.card.label}</p>
+          <p className="mt-3 text-sm leading-relaxed text-white/85">{hero.card.text}</p>
+          <dl className="mt-4 flex items-center justify-between border-t border-white/10 pt-3 text-xs">
+            <dt className="text-mute">{horarios[0].dia}</dt>
+            <dd className="font-bold text-brand">{horarios[0].hora}</dd>
+          </dl>
         </div>
       </div>
 

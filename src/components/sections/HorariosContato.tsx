@@ -1,9 +1,11 @@
 import { horarios, site, whatsappLink } from "@/content/site";
 import { Arrow, Chat, Instagram, Pin } from "../Icons";
+import { Mark } from "../Mark";
 
 export function HorariosContato() {
   return (
-    <section className="border-t border-line bg-ink-2 py-20 lg:py-24">
+    <section className="relative isolate overflow-hidden border-t border-line bg-ink-2 py-20 lg:py-28">
+      <Mark className="float pointer-events-none absolute -left-20 top-1/3 -z-10 h-[420px] w-[420px] opacity-[0.12]" />
       <div className="container-x grid gap-14 lg:grid-cols-2">
         <div id="horarios" className="reveal">
           <p className="eyebrow text-brand">Horários</p>
@@ -11,7 +13,7 @@ export function HorariosContato() {
             <span className="display block text-4xl">Sempre aberta</span>
             <span className="display-accent block text-5xl">Pra você</span>
           </h2>
-          <dl className="mt-8 divide-y divide-line border-y border-line">
+          <dl className="glass mt-8 divide-y divide-white/10 rounded-xl px-6">
             {horarios.map((h) => (
               <div key={h.dia} className="flex items-center justify-between py-4">
                 <dt className="text-sm font-semibold uppercase tracking-wide">{h.dia}</dt>

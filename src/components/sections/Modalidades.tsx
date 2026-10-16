@@ -4,9 +4,10 @@ import { Mark } from "../Mark";
 
 export function Modalidades() {
   return (
-    <section id="modalidades" className="py-20 lg:py-28">
+    <section id="modalidades" className="relative isolate overflow-hidden py-20 lg:py-28">
+      <Mark className="float pointer-events-none absolute -right-24 top-1/2 -z-10 h-[460px] w-[460px] -translate-y-1/2 opacity-[0.14]" />
       <div className="container-x grid gap-10 lg:grid-cols-[300px_1fr] lg:items-center">
-        <div>
+        <div className="reveal">
           <p className="eyebrow text-brand">Nossas modalidades</p>
           <h2 className="mt-3">
             <span className="display block text-4xl">Treine do seu</span>
@@ -27,7 +28,7 @@ export function Modalidades() {
                 href={whatsappLink(`Olá! Quero saber mais sobre ${m.title}.`)}
                 target="_blank"
                 rel="noopener"
-                className="group relative flex aspect-square flex-col justify-between overflow-hidden rounded-md border border-line bg-ink-3 p-5 transition-colors hover:border-brand lg:aspect-[5/6]"
+                className="group relative flex aspect-square flex-col justify-between overflow-hidden glass lift rounded-xl p-5 lg:aspect-[5/6]"
               >
                 <Mark className="pointer-events-none absolute -right-8 -top-6 h-40 w-40 opacity-[0.07]" />
                 <span className="display-accent relative text-5xl">{String(i + 1).padStart(2, "0")}</span>

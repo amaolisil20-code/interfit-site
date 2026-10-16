@@ -33,6 +33,10 @@ export const hero = {
   secondary: "Ver planos",
   note: "Atendimento direto pelo WhatsApp, sem compromisso.",
   motto: ["Disciplina", "Foco", "Resultados"],
+  card: {
+    label: "Aula experimental",
+    text: "Conheça a estrutura e treine com orientação, sem compromisso.",
+  },
 };
 
 export const nav = [

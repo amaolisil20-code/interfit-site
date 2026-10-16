@@ -1,11 +1,14 @@
 import { planos, whatsappLink } from "@/content/site";
 import { Arrow, Check } from "../Icons";
+import { Mark } from "../Mark";
 
 export function Planos() {
   return (
-    <section id="planos" className="py-20 lg:py-24">
+    <section id="planos" className="relative isolate overflow-hidden py-20 lg:py-28">
+      <Mark className="float pointer-events-none absolute -left-24 top-24 -z-10 h-[420px] w-[420px] opacity-[0.12]" />
+      <Mark className="float pointer-events-none absolute -right-28 bottom-0 -z-10 h-[360px] w-[360px] opacity-[0.1] [animation-delay:-5s]" />
       <div className="container-x">
-        <div className="mb-12 max-w-xl">
+        <div className="reveal mb-12 max-w-xl">
           <p className="eyebrow text-brand">Planos</p>
           <h2 className="mt-3">
             <span className="display block text-4xl">Escolha o seu</span>
@@ -18,8 +21,8 @@ export function Planos() {
             <li
               key={p.name}
               style={{ "--i": i * 2 } as React.CSSProperties}
-              className={`reveal relative flex flex-col rounded-lg border p-7 ${
-                p.highlight ? "border-brand bg-ink-3" : "border-line bg-ink-2"
+              className={`reveal glass lift relative flex flex-col rounded-xl p-7 ${
+                p.highlight ? "glass-brand" : ""
               }`}
             >
               {p.highlight && (
