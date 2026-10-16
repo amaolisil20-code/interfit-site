@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="border-t border-line py-10">
       <div className="container-x flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-        <Logo />
+        <Logo className="h-24 w-24" />
         <ul className="flex flex-wrap gap-x-6 gap-y-2">
           {nav.map((n) => (
             <li key={n.href}>

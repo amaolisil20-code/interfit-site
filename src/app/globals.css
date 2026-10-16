@@ -155,10 +155,6 @@
   from { transform: translateY(-10px) rotate(-2deg); }
   to   { transform: translateY(14px) rotate(2deg); }
 }
-@keyframes shift {
-  from { transform: translateX(8%); }
-  to   { transform: translateX(-28%); }
-}
 
 @layer components {
   .glass {
@@ -184,11 +180,6 @@
   .float { animation: float 9s ease-in-out infinite alternate; }
 }
 
-@supports (animation-timeline: view()) {
-  @layer components {
-    .scrollx { animation: shift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
-  }
-}
 @media (prefers-reduced-motion: reduce) {
-  .float, .scrollx { animation: none !important; }
+  .float { animation: none !important; }
 }

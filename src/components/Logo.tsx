@@ -1,17 +1,18 @@
-import { Mark } from "./Mark";
+import Image from "next/image";
 
 /**
- * Logo montada em vetor (símbolo + palavra) a partir do ícone da Interfit.
- * Nítida em qualquer tamanho; substituir pelo arquivo oficial quando existir.
+ * Ícone oficial da Interfit (public/img/logo.png, 225x225 — resolução limitada).
+ * Já contém o nome "ACADEMIA INTERFIT". Trocar por SVG quando a academia enviar.
  */
-export function Logo({ className = "" }: { className?: string }) {
+export function Logo({ className = "h-16 w-16" }: { className?: string }) {
   return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`} aria-label="Interfit Academia">
-      <Mark className="h-11 w-11 shrink-0" />
-      <span className="flex flex-col leading-none">
-        <span className="text-[0.5rem] font-semibold tracking-[0.6em] text-white/80">ACADEMIA</span>
-        <span className="mt-1 text-[1.55rem] font-black italic tracking-tight text-white">INTERFIT</span>
-      </span>
-    </span>
+    <Image
+      src="/img/logo.png"
+      alt="Interfit Academia"
+      width={225}
+      height={225}
+      priority
+      className={`shrink-0 rounded-full ${className}`}
+    />
   );
 }
