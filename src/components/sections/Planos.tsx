@@ -14,10 +14,11 @@ export function Planos() {
         </div>
 
         <ul className="grid gap-5 md:grid-cols-3">
-          {planos.map((p) => (
+          {planos.map((p, i) => (
             <li
               key={p.name}
-              className={`relative flex flex-col rounded-lg border p-7 ${
+              style={{ "--i": i * 2 } as React.CSSProperties}
+              className={`reveal relative flex flex-col rounded-lg border p-7 ${
                 p.highlight ? "border-brand bg-ink-3" : "border-line bg-ink-2"
               }`}
             >

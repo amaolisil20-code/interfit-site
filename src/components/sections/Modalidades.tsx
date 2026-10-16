@@ -22,7 +22,7 @@ export function Modalidades() {
 
         <ul className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 lg:mx-0 lg:grid lg:grid-cols-5 lg:overflow-visible lg:px-0">
           {modalidades.map((m, i) => (
-            <li key={m.title} className="w-[72%] shrink-0 snap-start sm:w-[42%] lg:w-auto">
+            <li key={m.title} style={{ "--i": i } as React.CSSProperties} className="reveal w-[72%] shrink-0 snap-start sm:w-[42%] lg:w-auto">
               <a
                 href={whatsappLink(`Olá! Quero saber mais sobre ${m.title}.`)}
                 target="_blank"

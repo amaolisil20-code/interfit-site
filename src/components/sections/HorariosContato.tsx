@@ -5,7 +5,7 @@ export function HorariosContato() {
   return (
     <section className="border-t border-line bg-ink-2 py-20 lg:py-24">
       <div className="container-x grid gap-14 lg:grid-cols-2">
-        <div id="horarios">
+        <div id="horarios" className="reveal">
           <p className="eyebrow text-brand">Horários</p>
           <h2 className="mt-3">
             <span className="display block text-4xl">Sempre aberta</span>
@@ -21,7 +21,7 @@ export function HorariosContato() {
           </dl>
         </div>
 
-        <div id="contato">
+        <div id="contato" className="reveal" style={{ "--i": 2 } as React.CSSProperties}>
           <p className="eyebrow text-brand">Contato</p>
           <h2 className="mt-3">
             <span className="display block text-4xl">Vem treinar</span>

@@ -31,6 +31,7 @@ export function Header() {
         scrolled || open ? "bg-ink/95 backdrop-blur border-b border-line" : "bg-transparent"
       }`}
     >
+      <div aria-hidden="true" className="progress absolute inset-x-0 bottom-0 h-0.5 bg-brand" />
       <div className="container-x flex h-[72px] items-center justify-between gap-6">
         <a href="#inicio" onClick={() => setOpen(false)}>
           <Logo />

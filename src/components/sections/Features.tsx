@@ -10,7 +10,8 @@ export function Features() {
           return (
             <li
               key={f.title}
-              className={`flex flex-col gap-3 px-2 py-9 lg:px-8 ${i > 0 ? "lg:border-l lg:border-line" : "lg:pl-0"}`}
+              style={{ "--i": i } as React.CSSProperties}
+              className={`reveal flex flex-col gap-3 px-2 py-9 lg:px-8 ${i > 0 ? "lg:border-l lg:border-line" : "lg:pl-0"}`}
             >
               <Icon className="h-9 w-9 text-brand" />
               <h3 className="text-sm font-bold uppercase tracking-wide">{f.title}</h3>
