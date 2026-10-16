@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "@fontsource-variable/montserrat/wght.css";
+@import "@fontsource-variable/montserrat/wght-italic.css";
+
+/* Identidade Interfit — tokens */
+@theme {
+  --color-brand: #ffd21f;
+  --color-brand-600: #f3c21a;
+  --color-ink: #05090c;      /* fundo base */
+  --color-ink-2: #0a0f14;    /* faixas/sections */
+  --color-ink-3: #121820;    /* cards */
+  --color-line: #1f2730;     /* divisórias */
+  --color-mute: #a7adb4;     /* texto secundário */
+
+  --font-sans: "Montserrat Variable", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    background: var(--color-ink);
+    color: #fff;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--color-brand); color: var(--color-ink); }
+}
+
+@layer components {
+  /* Título display: caixa alta pesada, como "A SUA MELHOR" */
+  .display {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+  }
+  /* Destaque amarelo itálico, como "VERSÃO" / "JEITO" */
+  .display-accent {
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--color-brand);
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+  }
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 9999px;
+    padding: 0.85rem 1.6rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--color-brand); color: var(--color-ink); }
+  .btn-primary:hover { background: var(--color-brand-600); }
+  .btn-outline { border: 1.5px solid var(--color-brand); color: #fff; }
+  .btn-outline:hover { background: var(--color-brand); color: var(--color-ink); }
+  .container-x { margin-inline: auto; width: 100%; max-width: 1240px; padding-inline: 1.25rem; }
+}
