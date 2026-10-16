@@ -5,8 +5,8 @@ import { Arrow } from "../Icons";
 export function Hero() {
   return (
     <section id="inicio" className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-ink pt-[72px]">
-      {/* Foto à direita; no mobile vira fundo escurecido. Desloca devagar com o scroll. */}
-      <div className="absolute inset-y-0 right-0 -z-10 w-full overflow-hidden lg:w-[64%]">
+      {/* Desktop: foto à direita. Mobile: foto no topo (rosto visível) que se dissolve no fundo, texto embaixo. Desloca devagar com o scroll. */}
+      <div className="absolute inset-x-0 top-0 -z-10 h-[60%] overflow-hidden lg:inset-y-0 lg:left-auto lg:right-0 lg:h-auto lg:w-[64%]">
         <div className="drift absolute inset-0 origin-top">
           <Image
             src="/img/hero.jpg"
@@ -14,15 +14,15 @@ export function Hero() {
             fill
             priority
             sizes="(min-width:1024px) 64vw, 100vw"
-            className="object-cover object-[35%_center] brightness-[0.97] contrast-[1.08] saturate-[0.9]"
+            className="object-cover object-[16%_18%] lg:object-[35%_center] brightness-[0.97] contrast-[1.08] saturate-[0.9]"
           />
         </div>
         <div className="grain absolute inset-0" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/75 to-ink/15 lg:via-ink/35" />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent lg:bg-gradient-to-r lg:from-ink lg:via-ink/35 lg:to-ink/15" />
+        <div className="absolute inset-x-0 bottom-0 hidden h-32 bg-gradient-to-t from-ink to-transparent lg:block" />
       </div>
 
-      <div className="container-x flex flex-1 items-center py-14 lg:py-20">
+      <div className="container-x flex flex-1 items-end pb-12 pt-[30svh] lg:items-center lg:py-20">
         <div className="max-w-[760px]">
           <p className="eyebrow enter flex items-center gap-3 text-brand" style={{ "--d": "0.1s" } as React.CSSProperties}>
             <span className="h-0.5 w-10 bg-brand" aria-hidden="true" />
